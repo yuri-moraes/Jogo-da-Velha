@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da velha</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="jogo-da-velha.png" type="image/x-icon" />
+  </head>
+  <body>
+    <code><h3>Desenvolvedor: Yuri Moraes ©</h3></code>
+    <h1>Jogo da Velha</h1>
+    <div id="playerNameDiv">
+      <div>
+        <label for="player1">Jogador - X : </label>
+        <input type="text" placeholder="Coloque seu nome" id="player1" />
+      </div>
+      <div>
+        <label for="player2">Jogador - O : </label>
+        <input type="text" placeholder="Coloque seu nome" id="player2" />
+      </div>
+    </div>
+    <section id="turnPlayerSection">
+      <h2>Vez de: <span id="currentPlayer"></span></h2>
+    </section>
+    <ul id="tableGameGrid">
+      <li data-move="0.0"></li>
+      <li data-move="0.1"></li>
+      <li data-move="0.2"></li>
+      <li data-move="1.0"></li>
+      <li data-move="1.1"></li>
+      <li data-move="1.2"></li>
+      <li data-move="2.0"></li>
+      <li data-move="2.1"></li>
+      <li data-move="2.2"></li>
+    </ul>
+    <button id="restartBtn">Iniciar / Resetar</button>
+</html>
